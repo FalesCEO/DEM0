@@ -1,0 +1,170 @@
+{
+  "status": "verified",
+  "environments": [
+    {
+      "id": "diffamp",
+      "name": "single-stage 5-transistor differential amplifier",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "DC gain (dB)",
+        "Unity-gain BW (Hz)",
+        "Phase margin (deg)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "ota",
+      "name": "two-stage Miller-compensated OTA",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "DC gain (dB)",
+        "Unity-gain BW (Hz)",
+        "Phase margin (deg)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "bandgap",
+      "name": "bandgap voltage reference (Kuijk cell)",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Reference voltage (V)",
+        "Temperature coeff (ppm/C)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "ldo",
+      "name": "low-dropout regulator (PMOS pass device)",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Output voltage (V)",
+        "Loop phase margin (deg)",
+        "PSRR at 1 kHz (dB)",
+        "Quiescent current (A)"
+      ]
+    },
+    {
+      "id": "comparator",
+      "name": "comparator with hysteresis",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Hysteresis width (V)",
+        "Trip point centre (V)",
+        "Propagation delay (s)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "lna",
+      "name": "low-noise amplifier (degenerated common source)",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Input noise (1k-1M) (V)",
+        "Gain at 10 kHz (dB)",
+        "-3 dB bandwidth (Hz)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "buffer",
+      "name": "source-follower voltage buffer",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "THD (h2..h5) (%)",
+        "Output swing pp (V)",
+        "Quiescent current (A)"
+      ]
+    },
+    {
+      "id": "vco",
+      "name": "voltage-controlled ring oscillator",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Oscillation freq (Hz)",
+        "Tuning gain (Hz/V)",
+        "Supply pushing (Hz/V)",
+        "Total power (W)"
+      ]
+    },
+    {
+      "id": "buck",
+      "name": "buck converter (asynchronous, 1 MHz)",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Output voltage (V)",
+        "Output ripple pp (V)",
+        "Efficiency (%)",
+        "Load-step droop (V)"
+      ]
+    },
+    {
+      "id": "mod1",
+      "name": "first-order delta-sigma modulator",
+      "simulator": "ngspice",
+      "tasks": [
+        "SIZE",
+        "DEBUG",
+        "ANALYZE"
+      ],
+      "metrics": [
+        "Effective bits (bits)",
+        "SNDR in band (dB)",
+        "Total power (W)"
+      ]
+    }
+  ],
+  "components": [
+    "Environment API",
+    "Task Generator",
+    "Simulator Adapter",
+    "Reward / Verifier",
+    "Trajectory",
+    "Evaluation"
+  ]
+}

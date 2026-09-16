@@ -1,0 +1,5 @@
+[
+  { "model": "GPT", "success_rate": 0.35 },
+  { "model": "Claude", "success_rate": 0.3 },
+  { "model": "Gemini", "success_rate": 0.27 }
+]

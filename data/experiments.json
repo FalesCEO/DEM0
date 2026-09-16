@@ -1,0 +1,8 @@
+{
+  "interactive": {
+    "status": "pending",
+    "single_shot": null,
+    "interactive": null
+  },
+  "training": { "status": "pending", "before": null, "after": null }
+}
